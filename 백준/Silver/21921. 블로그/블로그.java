@@ -24,21 +24,33 @@ public class Main {
         }
         int left = 1, high = X;
 
-        while(true) {
+        for (int i = 1; i <= N - X + 1; i++) {
             if(sum > max) {
                 max = sum;
                 cnt = 1;
             } else if(sum == max) {
-                cnt++;
+                cnt += 1;
             }
-            sum -= arr[left];
-            left += 1;
-            high += 1;
-            if(high > N) {
+            if(i + X > N) {
                 break;
             }
-            sum += arr[high];
+            sum = sum - arr[i] + arr[i + X];
         }
+//        while(true) {
+//            if(sum > max) {
+//                max = sum;
+//                cnt = 1;
+//            } else if(sum == max) {
+//                cnt++;
+//            }
+//            sum -= arr[left];
+//            left += 1;
+//            high += 1;
+//            if(high > N) {
+//                break;
+//            }
+//            sum += arr[high];
+//        }
         if(max == 0) {
             System.out.println("SAD");
         } else {
