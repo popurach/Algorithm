@@ -1,11 +1,7 @@
 package Baek;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
-import java.util.Arrays;
-import java.util.List;
-import java.util.StringTokenizer;
 
 // 그래프 탐색 하나는 나오고, 정렬 쓰는 문제 나오거나 소수점 둘째 자리에서 반올림 해서 출력 하는 문제 , 그리고 이분탐색
 public class Softeer {
@@ -38,11 +34,15 @@ public class Softeer {
 		List<Integer> testArr = new ArrayList<>();
 		for(int i=0; i<arr.length; i++)
 			testArr.add(arr[i]);
+
+		// 내림차순 정렬 8 6 5 ...
 		Collections.sort(testArr, (a, b) -> b - a);
+
 		for (int i = 0; i < testArr.size(); i++) {
 			System.out.println(testArr.get(i));
 		}
-		
+
+		// 오름차순 정렬
 		Arrays.sort(arr, (a, b) -> a - b);
 		System.out.println(Arrays.toString(arr));
 		
@@ -51,7 +51,7 @@ public class Softeer {
 //		Arrays.sort(strArr, Collections.reverseOrder());
 		Arrays.sort(strArr, (a, b) -> a.length() - b.length());
 		System.out.println(Arrays.toString(strArr));
-		
+
 		// class - Comparable 정렬
 		Fruit[] fruitArr = {
 		        new Fruit("Apple", 100),
