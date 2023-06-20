@@ -16,13 +16,10 @@ public class Main {
         K = Integer.parseInt(st.nextToken());
         int cnt = 0;
 
-        while(true) {
-            if(Integer.bitCount(N) <= K) {
-                System.out.println(cnt);
-                break;
-            }
-            N += 1;
-            cnt++;
+        while(Integer.bitCount(N) > K) {
+            cnt += N & (-N);
+            N += N & (-N);
         }
+        System.out.println(cnt);
     }
 }
