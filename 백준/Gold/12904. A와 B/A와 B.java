@@ -11,12 +11,11 @@ public class Main {
         T = br.readLine();
 
         while(T.length() > S.length()) {
-//            if(T.endsWith("A")) {
-            if(T.charAt(T.length() - 1) == 'A'){
+            if(T.endsWith("A")) {
                 T = T.substring(0, T.length() - 1);
             } else {
                 T = T.substring(0, T.length() - 1);
-                T = rotate(T);
+                T = new StringBuilder(T).reverse().toString();
             }
         }
         if(T.equals(S)) {
@@ -24,12 +23,5 @@ public class Main {
         } else {
             System.out.println(0);
         }
-    }
-    static String rotate(String str) {
-        String temp = "";
-        for (int i = str.length() - 1; i >=0 ; i--) {
-            temp += str.charAt(i);
-        }
-        return temp;
     }
 }
