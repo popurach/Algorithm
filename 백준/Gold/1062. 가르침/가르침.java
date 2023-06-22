@@ -1,25 +1,26 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.StringTokenizer;
 
+/**
+ * 비트 마스킹을 이용한 영어 단어 저장
+ * */
 public class Main {
-    static int N, K, max = 0;
-    static List<String> states;
-    static boolean[] isVisited;
+    static int N, K, max = 0, isVisited;
+    static int[] words;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
-        states = new ArrayList<>();
+        words = new int[N];
 
         for (int i = 0; i < N; i++) {
             String input = br.readLine();
-            states.add(input.substring(4, input.length() - 4));
+            for(char c : input.toCharArray()) {
+                words[i] |= (1 << c - 'a');
+            }
         }
         if(K < 5) {
             System.out.println(0);
@@ -28,25 +29,22 @@ public class Main {
             System.out.println(N);
             System.exit(0);
         }
-        isVisited = new boolean[26]; //antic는 true
-        isVisited['a' - 'a'] = isVisited['n' - 'a'] = isVisited['t' - 'a']
-                = isVisited['i' - 'a'] = isVisited['c' - 'a'] = true;
+//        isVisited = (1<<26) - 1; //antic는 true
+
+        isVisited |= (1<<'a' - 'a');
+        isVisited |= (1<<'n' - 'a');
+        isVisited |= (1<<'t' - 'a');
+        isVisited |= (1<<'i' - 'a');
+        isVisited |= (1<<'c' - 'a');
+
         comb(0, 0);
         System.out.println(max);
     }
     static void comb(int cnt, int start) {
         if(cnt == K - 5) {
             int count = 0;
-            for (int i = 0; i < states.size(); i++) {
-                String cur = states.get(i);
-                boolean flag = true;
-                for (int j = 0; j < cur.length(); j++) {
-                    if(!isVisited[cur.charAt(j) - 'a']){
-                        flag = false;
-                        break;
-                    }
-                }
-                if(flag) {
+            for (int i = 0; i < N; i++) {
+                if((words[i] & isVisited) == words[i]){
                     count++;
                 }
             }
@@ -55,10 +53,12 @@ public class Main {
             return;
         }
         for (int i = start; i < 26; i++) {
-            if(isVisited[i]) continue;
-            isVisited[i] = true;
+            if((isVisited & (1<<i)) != 0) continue;
+            // 비트 켜기
+            isVisited |= (1<<i);
             comb(cnt + 1, i + 1);
-            isVisited[i] = false;
+            // 비트 끄기
+            isVisited &= ~(1<<i);
         }
     }
 }
