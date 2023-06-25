@@ -39,7 +39,6 @@ public class Main {
         for (int i = 0; i < N; i++) {
             answer += arr[i];
         }
-
         bfs();
     }
     static void bfs() {
@@ -49,6 +48,7 @@ public class Main {
         set.add(problem);
 
         while(!q.isEmpty()) {
+            StringBuilder sb = new StringBuilder();
             game cur = q.poll();
             if(cur.sentence.equals(answer)) {
                 System.out.println(cur.cnt);
@@ -57,8 +57,9 @@ public class Main {
             for (int i = 0; i <= cur.sentence.length() - K; i++) {
                 String temp =
                         cur.sentence.substring(0, i) +
-                        new StringBuilder(cur.sentence.substring(i, i + K)).reverse().toString() +
+                        sb.append(cur.sentence, i, i + K).reverse() +
                         cur.sentence.substring(i + K, cur.sentence.length());
+                sb.setLength(0);
                 if(!set.contains(temp)) {
                     q.offer(new game(temp, cur.cnt + 1));
                     set.add(temp);
