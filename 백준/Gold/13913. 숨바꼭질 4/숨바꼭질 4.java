@@ -1,9 +1,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.PriorityQueue;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -23,9 +22,8 @@ public class Main {
             return this.count - o.count;
         }
     }
-    static int N, K, cnt = 0;
+    static int N, K;
     static int[] parent;
-    static List<Integer> list;
     static boolean[] isVisited;
     static StringBuilder sb;
     public static void main(String[] args) throws IOException {
@@ -35,17 +33,12 @@ public class Main {
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        list = new ArrayList<>();
+        sb = new StringBuilder();
         isVisited = new boolean[100001];
         parent = new int[100001];
-        sb = new StringBuilder();
 
         bfs();
-        System.out.println(cnt);
-        check(K);
-        for (int i = list.size() - 1; i >= 0; i--) {
-            System.out.print(list.get(i) + " ");
-        }
+        System.out.println(sb);
     }
     static void bfs() {
         PriorityQueue<human> pq = new PriorityQueue<>();
@@ -55,7 +48,17 @@ public class Main {
         while(!pq.isEmpty()) {
             human cur = pq.poll();
             if(cur.location == K) {
-                cnt = cur.count;
+                sb.append(cur.count + "\n");
+                Stack<Integer> stack = new Stack<>();
+                int start = K;
+                stack.push(start);
+                while(start != N) {
+                    start = parent[start];
+                    stack.push(start);
+                }
+                while(!stack.isEmpty()) {
+                    sb.append(stack.pop() + " ");
+                }
                 return;
             }
             if(cur.location - 1 >= 0 && !isVisited[cur.location - 1]) {
@@ -74,12 +77,5 @@ public class Main {
                 parent[cur.location * 2] = cur.location;
             }
         }
-    }
-    static void check(int cur) {
-        list.add(cur);
-        if(cur == N) {
-            return;
-        }
-        check(parent[cur]);
     }
 }
