@@ -1,0 +1,12 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(”“ä‡8ÌòìŸŒ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8ÌòìŸŒ1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8ÜòìŸŒ1
+\
+java:S1659"?Declare "hi" and all following declarations on a separate line.(Ô›½¼8ÜòìŸŒ1
+?
+java:S1659""Declare "sol2" on a separate line.(ÕòÖÕ8ÀíïŸŒ1
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(©ü©Ö8Ó˜òŸŒ1
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ÜòìŸŒ1

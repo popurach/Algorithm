@@ -1,0 +1,17 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(×…›ˆ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(”øêè
+n	java:S135*"YReduce the total number of break and continue statements in this loop to use at most one.(ëÁûŠ
+J
+java:S10662"/Merge this if statement with the enclosing one.(Ãø«”þÿÿÿÿ
+>
+java:S1604!"(Make this anonymous inner class a lambda(…‰Á°
+0
+java:S1220""Move this file to a named package.
+g
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõþÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(œû¿Ø
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(®õã‚

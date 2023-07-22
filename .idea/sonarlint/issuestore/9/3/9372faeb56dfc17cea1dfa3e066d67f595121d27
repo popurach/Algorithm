@@ -1,0 +1,27 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8ùÍó´Œ1
+i
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–İÌ8«Îó´Œ1
+i
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–İÌ8¬Îó´Œ1
+<
+java:S1659"Declare "M" on a separate line.(–İÌ8­Îó´Œ1
+v
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(”àØ 8°Îó´Œ1
+
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8¸Îó´Œ1
+{
+java:S3012$"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(šöµßúÿÿÿÿ8»Îó´Œ1
+U	java:S106*"9Replace this use of System.out or System.err by a logger.(Å•»Û8¿Îó´Œ1
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(×Æáî8ÀÎó´Œ1
+X	java:S1253"<This block of commented-out lines of code should be removed.(ÜÊè˜8ÂÎó´Œ1
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(¾‡Ïıÿÿÿÿ8ÄÎó´Œ1
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ºåğ8ÉÎó´Œ1
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(ŒŠÍúıÿÿÿÿ8ËÎó´Œ1
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(¯Ë²Î8ÌÎó´Œ1
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(Œöñúÿÿÿÿ8ÍÎó´Œ1
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(ò«µàüÿÿÿÿ8ÍÎó´Œ1
+U	java:S106["9Replace this use of System.out or System.err by a logger.(¼õèÒ8ÎÎó´Œ1
+T	java:S106_"9Replace this use of System.out or System.err by a logger.(¶å³8ÏÎó´Œ1
+@
+java:S1128"$Remove this unused import 'java.io'.(¬›ãD8ÒÎó´Œ1

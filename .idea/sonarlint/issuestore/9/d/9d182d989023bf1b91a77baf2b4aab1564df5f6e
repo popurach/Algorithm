@@ -1,0 +1,15 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÑÊ”8ØîñÅ—1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ş„õåşÿÿÿÿ8ÙîñÅ—1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8ÚîñÅ—1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ñàºùÿÿÿÿ8‰ïñÅ—1
+n
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ñàºùÿÿÿÿ8‰ïñÅ—1
+i
+java:S3008 "LRename this field "D" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¡óñ8‰ïñÅ—1
+`
+java:S1659">Declare "M" and all following declarations on a separate line.(·ñàºùÿÿÿÿ8ŠïñÅ—1
+{
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(‡€´³şÿÿÿÿ8‹ïñÅ—1
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(–äµùÿÿÿÿ8ÂºõÅ—1

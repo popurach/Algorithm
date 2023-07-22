@@ -1,0 +1,10 @@
+
+n	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.( Ã’íÿÿÿÿÿ8šÖ©ëŒ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8šÖ©ëŒ1
+i
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Şà“8½Ö©ëŒ1
+]
+java:S1659"@Declare "cnt" and all following declarations on a separate line.(‰Şà“8½Ö©ëŒ1
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(óŠÕÎÿÿÿÿÿ8Ğ¬ëŒ1
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(®õã‚8şİÁëŒ1

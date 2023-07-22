@@ -1,0 +1,17 @@
+
+i	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.( é°Ò8½©õ‘Ž1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8¿©õ‘Ž1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Òµòýÿÿÿÿ8¿©õ‘Ž1
+n
+java:S3008"LRename this field "K" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Òµòýÿÿÿÿ8¿©õ‘Ž1
+`
+java:S1659">Declare "K" and all following declarations on a separate line.(›Òµòýÿÿÿÿ8¿©õ‘Ž1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(óŠÕÎÿÿÿÿÿ8¿©õ‘Ž1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(†ïÂð8¿©õ‘Ž1
+l
+java:S1764!"JCorrect one of the identical sub-expressions on both sides of operator "-"(ü¡’øúÿÿÿÿ8¿©õ‘Ž1
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(¾ùôŒùÿÿÿÿ8¿©õ‘Ž1
+t
+java:S3776&"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(³Ôäƒýÿÿÿÿ8¿©õ‘Ž1

@@ -1,0 +1,12 @@
+
+Ÿ
+java:S1598"ƒThis file "Street11.java" should be located in "Baek" directory, not in "C:\Users\2hoju\intellij-workspace\11ë²ˆê°€ ì¸í„´ ì‹œí—˜".(˜ÿ¬Éùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ
+Q	java:S125	"<This block of commented-out lines of code should be removed.(Ç÷ÿÕ
+Q	java:S125"<This block of commented-out lines of code should be removed.(äïÓ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(äïÓ
+Q	java:S125H"<This block of commented-out lines of code should be removed.(Ë âÕ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ

@@ -1,0 +1,17 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(•ğ‚Ìûÿÿÿÿ8ĞøÁÁŒ1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÃÈâˆúÿÿÿÿ8ĞøÁÁŒ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8ĞøÁÁŒ1
+n
+java:S3008!"LRename this field "D" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùæâµøÿÿÿÿ8ÿøÁÁŒ1
+`
+java:S1659!">Declare "D" and all following declarations on a separate line.(Ùæâµøÿÿÿÿ8ÿøÁÁŒ1
+{
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¼ÚÙöşÿÿÿÿ8ùÁÁŒ1
+`
+java:S1659">Declare "x" and all following declarations on a separate line.(Ã¯©¾øÿÿÿÿ8ùÁÁŒ1
+]	java:S1250"<This block of commented-out lines of code should be removed.(Ö‘Ïöúÿÿÿÿ8ùÁÁŒ1
+]	java:S1258"<This block of commented-out lines of code should be removed.(Ùµœìıÿÿÿÿ8ùÁÁŒ1
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(¦¤‚ùÿÿÿÿ8ùÁÁŒ1
+V
+java:S1128	"4Remove this unused import 'java.util.PriorityQueue'.(ÆãÑşøÿÿÿÿ8ùÁÁŒ1

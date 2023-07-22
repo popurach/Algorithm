@@ -1,0 +1,23 @@
+
+l	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÓ¦88æ¡È—1
+l	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÓ¦88‚æ¡È—1
+m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÀ“®8‚æ¡È—1
+m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÀ“®8‚æ¡È—1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(×ëè¢úÿÿÿÿ8‚æ¡È—1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8ƒæ¡È—1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8Íæ¡È—1
+?
+java:S1659"#Declare "minDp" on a separate line.(­‚†M8Íæ¡È—1
+_
+java:S1659"BDeclare "dpMin" and all following declarations on a separate line.(Ş¸Ÿ›8Íæ¡È—1
+]	java:S125"<This block of commented-out lines of code should be removed.(·Êîúÿÿÿÿ8¥ç¢È—1
+]	java:S125#"<This block of commented-out lines of code should be removed.(³ú–‘ıÿÿÿÿ8Ñæ¡È—1
+H
+java:S1659/",Declare "prevMaxValue_2" on a separate line.(ÂÓ¦88Ñæ¡È—1
+I
+java:S16594",Declare "prevMinValue_2" on a separate line.(ÕÀ“®8Ñæ¡È—1
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(­ËÖşÿÿÿÿ8Ä¢È—1
+X	java:S125<"<This block of commented-out lines of code should be removed.(ê®Ùò8Òæ¡È—1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ôæ¡È—1
