@@ -9,6 +9,7 @@ public class Main {
     static int[][] graph;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         StringTokenizer st;
         n = Integer.parseInt(br.readLine());
         m = Integer.parseInt(br.readLine());
@@ -26,17 +27,17 @@ public class Main {
             graph[a][b] = Math.min(graph[a][b], c);
         }
 
-        for (int i = 1; i <= n; i++) { // 경유지
-            for (int j = 1; j <= n; j++) { // 출발지
-                if(i==j) {
+        for (int k = 1; k <= n; k++) { // 경유지
+            for (int i = 1; i <= n; i++) { // 출발지
+                if(i==k) {
                     continue;
                 }
-                for (int k = 1; k <= n; k++) { // 도착지
-                    if(i==k || j==k) {
+                for (int j = 1; j <= n; j++) { // 도착지
+                    if(j==k || i==j) {
                         continue;
                     }
-                    if(graph[j][k] > graph[j][i] + graph[i][k]) {
-                        graph[j][k] = graph[j][i] + graph[i][k];
+                    if(graph[i][j] > graph[i][k] + graph[k][j]) {
+                        graph[i][j] = graph[i][k] + graph[k][j];
                     }
                 }
             }
@@ -45,12 +46,13 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 if(graph[i][j] == 100000000) {
-                    System.out.print(0 + " ");
+                    sb.append(0 + " ");
                 } else {
-                    System.out.print(graph[i][j] + " ");
+                    sb.append(graph[i][j] + " ");
                 }
             }
-            System.out.println();
+            sb.append("\n");
         }
+        System.out.println(sb);
     }
 }
