@@ -1,0 +1,22 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şğÑ8¸öÌ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8¸öÌ1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àäùÿÿÿÿ8–÷Ì1
+n
+java:S3008"LRename this field "L" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àäùÿÿÿÿ8–÷Ì1
+n
+java:S3008"LRename this field "R" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àäùÿÿÿÿ8–÷Ì1
+n
+java:S3008"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àäùÿÿÿÿ8–÷Ì1
+`
+java:S1659">Declare "L" and all following declarations on a separate line.(Àäùÿÿÿÿ8–÷Ì1
+G
+java:S1659"%Declare "numbers" on a separate line.(û÷¡´úÿÿÿÿ8–÷Ì1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(œû¿Ø8–÷Ì1
+]	java:S125 "<This block of commented-out lines of code should be removed.(»¦òÿÿÿÿÿ8‡»¤Ì1
+]
+java:S1659;"@Declare "idx" and all following declarations on a separate line.(ÃíŞ8–÷Ì1
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(®õã‚8–÷Ì1
+]	java:S125W"<This block of commented-out lines of code should be removed.(¦‘Ößúÿÿÿÿ8–÷Ì1

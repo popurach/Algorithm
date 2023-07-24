@@ -1,0 +1,11 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ĞÄøÀÿÿÿÿÿ8æë°¢Œ1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(±¼¸Ú8æë°¢Œ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8æë°¢Œ1
+]
+java:S1659"@Declare "max" and all following declarations on a separate line.(ëÀÌè8öë°¢Œ1
+m	java:S116"LRename this field "V" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘àÆÛşÿÿÿÿ8öë°¢Œ1
+D
+java:S1659""Declare "cost" on a separate line.(‘àÆÛşÿÿÿÿ8öë°¢Œ1
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(¾ùôŒùÿÿÿÿ8öë°¢Œ1
+]	java:S1259"<This block of commented-out lines of code should be removed.(ëö³‚ùÿÿÿÿ8öë°¢Œ1

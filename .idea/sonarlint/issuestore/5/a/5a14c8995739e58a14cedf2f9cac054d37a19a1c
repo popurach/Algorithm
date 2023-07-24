@@ -1,0 +1,20 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÚƒÚË8Í™²¶1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ô¯¼¾8Í™²¶1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8Ò™²¶1
+h
+java:S3008 "LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Çºs8š²¶1
+h
+java:S3008 "LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Çºs8š²¶1
+h
+java:S3008 "LRename this field "K" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Çºs8š²¶1
+Z
+java:S1659 ">Declare "M" and all following declarations on a separate line.(°Çºs8¦š²¶1
+{
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ğ‡ş¹úÿÿÿÿ8§š²¶1
+A
+java:S1659"Declare "c" on a separate line.(€óÉÄÿÿÿÿÿ8§š²¶1
+I
+java:S1659/"'Declare "sumPrefer" on a separate line.(–˜Ÿüÿÿÿÿ8§š²¶1
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(£ÚÊàúÿÿÿÿ8²š²¶1
+U	java:S106="9Replace this use of System.out or System.err by a logger.(Ÿ—‰Ä8²š²¶1

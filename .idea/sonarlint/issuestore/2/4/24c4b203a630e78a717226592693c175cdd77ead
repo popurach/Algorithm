@@ -1,0 +1,16 @@
+
+9
+java:S1643'"Use a StringBuilder instead.(ŞÃöñ8İ†õ‰1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª¼Àä8é†õ‰1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¶³Ñô8é†õ‰1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜ÿ¬Éùÿÿÿÿ8é†õ‰1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô« Ãúÿÿÿÿ8í†õ‰1
+n
+java:S3008"LRename this field "K" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô« Ãúÿÿÿÿ8í†õ‰1
+A
+java:S1659"Declare "K" on a separate line.(Ô« Ãúÿÿÿÿ8í†õ‰1
+A
+java:S1659"$Declare "answer" on a separate line.(÷»Ğ‰8í†õ‰1
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(ÜçïØıÿÿÿÿ8í†õ‰1
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(¡ò†şÿÿÿÿ8í†õ‰1
