@@ -11,8 +11,7 @@ public class HashSetTest {
 
 		HashSet<String> colors = new HashSet<>(Arrays.asList("Red", "Black", "Yellow", "Purple"));
 		
-		
-		// µ¥ÀÌÅÍ ÀÔ·ÂÇÏ±â
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï±ï¿½
 		set.add(1);
 		set.add(2);
 		System.out.println(set.size());
@@ -20,7 +19,7 @@ public class HashSetTest {
 		
 		
 		
-		// HashSet µ¥ÀÌÅÍ Ãâ·ÂÇÏ±â
+		// HashSet ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 		
 		Iterator iter = set.iterator();
 		while(iter.hasNext()) {
@@ -39,13 +38,13 @@ public class HashSetTest {
 		});
 		System.out.println();
 		
-		// HashSet ¿¤·¹¸ÕÆ® »èÁ¦
+		// HashSet ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
 		
 		colors.remove("Red");
 		colors.removeIf(color -> color.startsWith("B"));
 		
 		
-		// HashSet °ª Á¸Àç À¯¹« È®ÀÎ
+		// HashSet ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 		
 		System.out.println(colors.contains("Green"));
 	}
