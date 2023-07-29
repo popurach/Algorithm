@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Q = Integer.parseInt(br.readLine());
         StringTokenizer st;
-        HashMap<String, List<Integer>> map = new HashMap<>();
+        HashMap<String, PriorityQueue<Integer>> map = new HashMap<>();
 
         long sum = 0;
         for (int i = 0; i < Q; i++) {
@@ -24,28 +25,25 @@ public class Main {
 
             if(q == 1) {
                 if(map.containsKey(name)) {
-                    List<Integer> C = map.get(name);
+                    PriorityQueue<Integer> pq = map.get(name);
                     for (int j = 0; j < k; j++) {
-                        C.add(Integer.parseInt(st.nextToken()));
+                        pq.add(Integer.parseInt(st.nextToken()));
                     }
-                    Collections.sort(C, (a, b)->b-a);
-                    map.replace(name, C);
+                    map.replace(name, pq);
                 } else {
-                    List<Integer> C = new ArrayList<>();
+                    PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b-a);
                     for (int j = 0; j < k; j++) {
-                        C.add(Integer.parseInt(st.nextToken()));
+                        pq.add(Integer.parseInt(st.nextToken()));
                     }
-                    Collections.sort(C, (a, b) -> b - a);
-                    map.put(name, C);
+                    map.put(name, pq);
                 }
             } else if(q == 2) {
                 if(map.containsKey(name)) {
-                    List<Integer> C = map.get(name);
-                    if (k > C.size()) {
-                        k = C.size();
+                    if (k > map.get(name).size()) {
+                        k = map.get(name).size();
                     }
                     for (int j = 0; j < k; j++) {
-                        sum += C.remove(0);
+                        sum += map.get(name).poll();
                     }
                 }
             }
