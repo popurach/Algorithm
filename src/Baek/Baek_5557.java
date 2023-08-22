@@ -4,7 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
+/**
+ * 1학년
+ * N개의 숫자가 주어지고 숫자 사이에 '+' 또는 '-'를 넣어 등식을 만듦
+ * 중간에 나오는 수 모두 0이상 20이하
+ * dp -> arr[N-1][21]을 선언하여 O(N-1 x 21)으로 풀이 가능
+ * */
 public class Baek_5557 {
     static int N;
     static int[] numbers;

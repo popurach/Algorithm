@@ -1,6 +1,5 @@
 package Baek;
 
-import java.io.*;
 import java.util.*;
 
 // 그래프 탐색 하나는 나오고, 정렬 쓰는 문제 나오거나 소수점 둘째 자리에서 반올림 해서 출력 하는 문제 , 그리고 이분탐색
@@ -41,7 +40,6 @@ public class Softeer {
 		for (int i = 0; i < testArr.size(); i++) {
 			System.out.println(testArr.get(i));
 		}
-
 		// 오름차순 정렬
 		Arrays.sort(arr, (a, b) -> a - b);
 		System.out.println(Arrays.toString(arr));
@@ -75,8 +73,7 @@ public class Softeer {
 		double pie = 3.1415926535;
 		pie = Math.round(pie * 10) / 10.0;
 		System.out.println(pie);
-		
-		
+
 		// 문자열 메소드
 		String str1 = "문자열을 공부해봅시다";
 		String str2 = "abcdef";
@@ -93,6 +90,25 @@ public class Softeer {
 		// 4. 
 		char[] test = str1.toCharArray();
 		System.out.println(test.length);
+
+		// 5. split : 지정한 문자로 문자열을 나눔 -> 배열로 반환
+		String[] sp = str1.split("공");
+
+		// 해시 맵
+		Map<String, String> map = new HashMap<>();
+		map.put("사람1", "사람1");
+		if(map.containsKey("사람1")) {
+			map.replace("사람1", "사람11");
+		}
+		System.out.println(map.get("사람1"));
+		System.out.println(map.getOrDefault("사람", "없어요"));
+
+		PriorityQueue<Fruit> pq = new PriorityQueue<>((x, y) -> {
+			if(x.name.equals(y.name)) {
+				return y.price - x.price;
+			}
+			return y.price - x.price;
+		});
 	}
 	// 소수 판정
 	static boolean checkPrime(int num) {
