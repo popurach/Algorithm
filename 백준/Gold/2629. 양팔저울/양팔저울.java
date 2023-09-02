@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -28,9 +27,11 @@ public class Main {
             answer[i] = Integer.parseInt(st.nextToken());
         }
 
+        int sum = 0;
         for (int i = 1; i < N + 1; i++) {
+            sum += weight[i];
             dp[i][weight[i]] = 1;
-            for (int j = 1; j <= 40000; j++) {
+            for (int j = 1; j <= sum; j++) {
                 if(dp[i-1][j] == 1) {
                     dp[i][j] = 1;
                     dp[i][j + weight[i]] = 1;
