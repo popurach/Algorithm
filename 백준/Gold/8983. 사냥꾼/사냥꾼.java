@@ -37,17 +37,22 @@ public class Main {
         int cnt = 0;
         for (int i = 0; i < N; i++) {
             int[] cur = animals.get(i);
-            int lo = 0, hi = M-1, mid = -1;
+            int lo = 0, hi = M, mid = -1;
             while(lo <= hi) {
                 mid = (lo + hi)/2;
-                if(loc[mid] >= cur[0]) {
+
+                if(mid >= M) {
+                    break;
+                }
+                int l = cur[1] + Math.abs(cur[0] - loc[mid]);
+                if(L >= l) {
+                    cnt += 1;
+                    break;
+                } else if(loc[mid] >= cur[0]) {
                     hi -= 1;
                 } else {
                     lo += 1;
                 }
-            }
-            if(mid != -1 && cur[1] + Math.abs(cur[0] - loc[mid]) <= L) {
-                cnt += 1;
             }
         }
         System.out.println(cnt);
