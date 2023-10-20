@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 public class Main {
     static int N, M, L, lo = 1, hi = 1, answer;
@@ -25,9 +24,7 @@ public class Main {
         }
         list.sort((a, b) -> a-b);
 
-        for (int i = 1; i < list.size(); i++) {
-            hi = Integer.max(hi, list.get(i) - list.get(i-1));
-        }
+        hi = L;
         answer = L;
         while(lo <= hi) {
             int mid = (lo + hi)/2;
@@ -40,9 +37,10 @@ public class Main {
             if(cnt > M) {
                 lo = mid + 1;
             } else {
+                answer = Integer.min(answer, mid);
                 hi = mid - 1;
             }
         }
-        System.out.println(lo);
+        System.out.println(answer);
     }
 }
