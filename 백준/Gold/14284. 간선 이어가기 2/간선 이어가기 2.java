@@ -6,7 +6,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
-
+/**
+ * 간선 이어가기 2
+ * 다익스트라 사용
+ * */
 public class Main {
     static class node implements Comparable<node>{
         int node, cost;
@@ -64,11 +67,14 @@ public class Main {
 
         while(!pq.isEmpty()) {
             node cur = pq.poll();
+            if(cur.cost > D[cur.node]) {
+                continue;
+            }
             for (int i = 0; i < list[cur.node].size(); i++) {
                 node next = list[cur.node].get(i);
-                if(D[next.node] <= next.cost) {
-                    continue;
-                }
+//                if(D[next.node] <= next.cost) {
+//                    continue;
+//                }
                 if(D[next.node] > D[cur.node] + next.cost) {
                     D[next.node] = D[cur.node] + next.cost;
                     pq.offer(new node(next.node, D[next.node]));
